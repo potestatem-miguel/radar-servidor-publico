@@ -1,0 +1,20 @@
+﻿{
+  "method": "POST",
+  "url": "https://seu-dominio/radar-servidor",
+  "sendHeaders": true,
+  "headerParameters": {
+    "parameters": [
+      {
+        "name": "Authorization",
+        "value": "Bearer SEU_TOKEN"
+      },
+      {
+        "name": "Content-Type",
+        "value": "application/json"
+      }
+    ]
+  },
+  "sendBody": true,
+  "contentType": "json",
+  "jsonBody": "={\n  \"date\": $now.minus({ days: 1 }).toFormat('yyyy-MM-dd')\n}"
+}

@@ -1,0 +1,19 @@
+﻿{
+  "name": "radar-servidor-app",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API para coletar RSS/sitemap, analisar temas de servidor publico com OpenAI e devolver JSON para o n8n.",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "fast-xml-parser": "^4.5.3",
+    "openai": "^4.89.0"
+  }
+}
